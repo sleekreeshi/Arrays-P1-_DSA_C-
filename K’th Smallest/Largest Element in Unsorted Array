@@ -1,0 +1,11 @@
+#include<iostream>
+#include<bits/stdc++.h>
+using namespace std;
+
+int main(){
+ int r[]={12,3,4,5,34,22};            //[n-2] would give for k=3 (third largest element in array)
+ int n=sizeof(r)/sizeof(r[0]);
+ std::sort(r,r+n);
+ cout<<r[n-2];                       //[n-1] would give 2nd largest
+ return 0;
+}
